@@ -1,5 +1,5 @@
 
- # Used Phones & Tablets Pricing Dataset
+ # Used Phones Pricing Analaysis and Prediction
 <p align="center">
 <img src="https://i.imgur.com/M29eSKC.gif" width="500" height="500" />
 </p>
