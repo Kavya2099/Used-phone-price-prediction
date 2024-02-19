@@ -7,6 +7,13 @@ Regression model created to predict the price of the used phones. Deployed in st
 <img src="https://i.imgur.com/M29eSKC.gif" width="500" height="500" />
 </p>
 
+
+Dataset: https://www.kaggle.com/datasets/ahsan81/used-handheld-device-data
+
+Kaggle link: https://www.kaggle.com/kavya2099/used-phone-price-prediction
+
+Streamlit link: https://used-phone-price-prediction.streamlit.app/
+
 ## Introduction
 
 Used phones and tablets have become increasingly popular in both the global and Indian markets in recent years. The rise of e-commerce platforms, improved quality of refurbished devices, and the increasing affordability of technology have all contributed to this trend.
@@ -89,10 +96,3 @@ variables that could help in getting better evaluation results
 * https://www.kaggle.com/code/jayantverma9380/used-phone-price-prediction-project/notebook#Linear-Regression-Model
 * ChatGPT - https://chat.openai.com/
 
------------------------------------------------------------------------------------------------------------------------
-
-Dataset: https://www.kaggle.com/datasets/ahsan81/used-handheld-device-data
-
-Kaggle link: https://www.kaggle.com/kavya2099/used-phone-price-prediction
-
-Streamlit link: https://used-phone-price-prediction.streamlit.app/
