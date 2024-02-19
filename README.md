@@ -1,5 +1,8 @@
 
  # Used Phones Pricing Analysis and Prediction
+
+Regression model created to predict the price of the used phones. Deployed in streamlit cloud. Created using Kaggle noteboook
+ 
 <p align="center">
 <img src="https://i.imgur.com/M29eSKC.gif" width="500" height="500" />
 </p>
