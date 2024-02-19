@@ -57,8 +57,6 @@ variables that could help in getting better evaluation results
 
 ## Insights
 
-# Insights
-
 * **Samsung** was the most reused phone next to phone brands which are categorized as **Others**. 
 * There are more people using **Android** OS
 * Screen size is mostly between **10-15** cm
