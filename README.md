@@ -47,16 +47,18 @@ variables that could help in getting better evaluation results
 
 ## Insights
 
+# Insights
+
 * **Samsung** was the most reused phone next to phone brands which are categorized as **Others**. 
 * There are more people using **Android** OS
-* Screen size is mostly between **10-15**
+* Screen size is mostly between **10-15** cm
 * **4g and 5g** users are more
 * Rear camera mp range is mostly between **5-15** mega pixels
 * Front camera mp range is mostly between **0-10** mega pixels
-* Internal memory is mostly between **0-100**
+* Internal memory is mostly between **0-100** GB
 * Phones ram storage is mostly between **3-5** GB
-* Battery life is mostly around **3000** mah
-* Weight is around **150-210**
+* Battery life is mostly around **3000** mAh
+* Weight is around **150-210** grams
 * Most of the phones were released between **2013-2015**
 * People have used the phones on an average between **600-800** days which is approximately 2-2.5 years
 * Average normalized used price was between **4.2-5** k
