@@ -70,7 +70,6 @@ variables that could help in getting better evaluation results
 * If we need to remove the last plot in a subplot for the visualizations which has odd number(eg: 11 plots but subplots shows 12), we can remove last one using **delaxes**
 * Using **regplot** on bivariate analysis helps us to identify the rising/falling relationship with target variables
 * **SelectKBest** in feature selection can be used to pick up top K number of features which can used in model training
-* PCA can be used for dimensionality reduction
 
 ## Things to try it out next!
 * Applying crossvalidation concepts in model training
@@ -78,7 +77,6 @@ variables that could help in getting better evaluation results
 * Using Q-plots to visualize the distribution of a dataset and to compare it to a theoretical distribution
 * Trying out other Feature selection methods
 * Using Z scores to treat outliers
-* Deploying the model
 
 ## References
 
@@ -91,3 +89,5 @@ variables that could help in getting better evaluation results
 Dataset: https://www.kaggle.com/datasets/ahsan81/used-handheld-device-data
 
 Kaggle link: https://www.kaggle.com/kavya2099/used-phone-price-prediction
+
+Streamlit link: https://used-phone-price-prediction.streamlit.app/
