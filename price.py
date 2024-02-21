@@ -86,6 +86,7 @@ if st.button('Submit'):
         prediction = price_model.predict(data_encoded)
         st.write('Predicted used price:', prediction)
 
+        #adjustment factors 
         if new_price<=10000:
             prediction = np.exp(prediction)*7
         elif new_price>10000 and new_price<=16000:
