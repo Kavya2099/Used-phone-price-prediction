@@ -100,4 +100,4 @@ if st.button('Submit'):
         elif new_price>70000 and new_price<=1000000:
             prediction = np.exp(prediction)*40
 
-        st.success(f'Price of the used/refurbished device: Rs.{round(prediction[0], 2)}')
+        st.success(f'Price of the used/refurbished device: {round(prediction[0], 2)}')
