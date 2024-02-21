@@ -84,7 +84,7 @@ if st.button('Submit'):
         
         # Predict the used price using the model
         prediction = price_model.predict(data_encoded)
-        st.write('Predicted used price:', prediction)
+        #st.write('Predicted used price:', prediction)
 
         #adjustment factors 
         if new_price<=10000:
