@@ -14,6 +14,10 @@ Kaggle link: https://www.kaggle.com/kavya2099/used-phone-price-prediction
 
 Streamlit link: https://used-phone-price-prediction.streamlit.app/
 
+<p align="center">
+<img src="priceprediction.gif"  />
+</p>
+
 ## Introduction
 
 Used phones and tablets have become increasingly popular in both the global and Indian markets in recent years. The rise of e-commerce platforms, improved quality of refurbished devices, and the increasing affordability of technology have all contributed to this trend.
