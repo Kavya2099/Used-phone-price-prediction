@@ -93,7 +93,7 @@ variables that could help in getting better evaluation results
 
 ## Things to try it out next!
 * Applying crossvalidation concepts in model training
-* Applying Pipeline conecpts in model training
+* Applying Pipeline concepts in model training
 * Using Q-plots to visualize the distribution of a dataset and to compare it to a theoretical distribution
 * Trying out other Feature selection methods
 * Using Z scores to treat outliers
