@@ -42,7 +42,7 @@ battery = st.number_input('Energy capacity of the device battery in mAh',step=1)
 weight = st.number_input('Weight of the device in grams',step=1)
 release_year = st.number_input("Year when the device model was released",step=1)
 days_used= st.number_input("Number of days the used/refurbished device has been used",step=1)
-new_price=st.number_input("Enter the price new device of the same model",step=1)
+new_price=st.number_input("Enter the price new device of the same model in Rupees",step=1)
 features_values = {'device_type': device_type, 'os_type': os_type, '4g': _4g, '5g': _5g, 
                    'screen_size': screen_size, 'Rear_camera_mp': rear_camera_mp, 
                    'Front_camera_mp': front_camera_mp, 'Internal_memory': internal_memory, 
@@ -54,8 +54,10 @@ if st.button('Submit'):
     if any(value == 0 or value == 0.00 for value in features_values.values()):
         st.warning('Please input all the details.')
     else:
+        # converting to euro and denormalizing the price
+        new_price= new_price/89.87
         normalized_new_price=np.log(new_price)
-    # Create a DataFrame with the input values
+        # Create a DataFrame with the input values
         data = pd.DataFrame({
             'Device_type': [device_type],
             'OS_type': [os_type],
@@ -73,8 +75,8 @@ if st.button('Submit'):
             'Normalized_new_price': [normalized_new_price]
         })
         data_1 = pd.DataFrame({'screen_size': [screen_size],
+            'Rear_camera_mp': [rear_camera_mp],
             'Front_camera_mp': [front_camera_mp],
-            'Internal_memory': [internal_memory],
             'Battery': [battery],
             'Normalized_new_price': [normalized_new_price]
         })
@@ -84,20 +86,10 @@ if st.button('Submit'):
         
         # Predict the used price using the model
         prediction = price_model.predict(data_encoded)
-
-        if new_price<=10000:
-            prediction = np.exp(prediction)*7
-        elif new_price>10000 and new_price<=16000:
-            prediction = np.exp(prediction)*10
-        elif new_price>16000 and new_price<=22000:
-            prediction = np.exp(prediction)*13
-        elif new_price>22000 and new_price<=27000:
-            prediction = np.exp(prediction)*16
-        elif new_price>27000 and new_price<=49999:
-            prediction = np.exp(prediction)*25
-        elif new_price>=50000 and new_price<=70000:
-            prediction = np.exp(prediction)*30
-        elif new_price>70000 and new_price<=1000000:
-            prediction = np.exp(prediction)*40
-
-        st.success(f'Price of the used/refurbished device: {round(prediction[0], 2)}')
+        #st.write('Predicted used price:', prediction)
+        p=np.exp(prediction)
+        #indian rupee conversion
+        p=p*89.87
+        
+        st.success(f'Price of the used/refurbished device: ₹ {round(p[0], 2)}')
+        
