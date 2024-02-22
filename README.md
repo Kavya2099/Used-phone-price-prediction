@@ -78,6 +78,12 @@ variables that could help in getting better evaluation results
 * Most of the features has rising relationship with the target variable --> normalized used price
 * **Linear Regression** with top 5 features was considered to be the best model for this problem.
 
+## Deploying model
+
+* Implemented the model in **Streamlit**.
+* Given that the dataset indicated data collection from Asian and European markets, assuming the normalized prices were in Euros, we converted them to enable the model to predict values in Indian rupees.
+* While the target feature is the normalized used price, we transformed the values back to actual prices for user display purposes.
+
 ## What I've learnt!
 
 * Plotting histogram using subplots makes visualization easier
